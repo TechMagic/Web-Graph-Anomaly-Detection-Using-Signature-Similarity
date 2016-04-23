@@ -201,9 +201,9 @@ def calculateAnomalies(domain):
 		print str(value) + "_" + domain + ".txt"
 
 def main():
-	domainlist = ['autonomous','enron_by_day','p2p-Gnutella','voices']
+	domainList = ['autonomous','enron_by_day','p2p-Gnutella','voices']
 
-	for domain in domainlist:
+	for domain in domainList:
 		calculateAnomalies(domain)
 	
 if __name__ == "__main__":
