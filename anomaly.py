@@ -165,7 +165,7 @@ def calculateAnomalies(domain):
 	f = open(fullPath + "_time_series.txt", "w")
 
 	for value in similarity:
-		f.write(str(value) + "\n")
+		f.write(str(value) + "\n") 
 
 	f.close()
 
