@@ -193,7 +193,7 @@ def calculateAnomalies(domain):
 	anomaly = []
 
 	for i in range(0,len(similarity)-1):
-		if similarity[i] < lowerTreshold and similarity[i+1] < lowerTreshold:
+		if similarity[i] < lowerTreshold or similarity[i+1] > upperTreshold:
 			anomaly.append(i+1)
 
 	print "The anomalies are: "
